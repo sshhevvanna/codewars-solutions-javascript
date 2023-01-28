@@ -1,4 +1,4 @@
-<img src="images/codewars.png" alt="Codewars logo" width="800" height="300"/>
+<img src="images/codewars.png" alt="Codewars logo" width="900" height="350"/>
 
 # CODEWARS SOLUTIONS
 
