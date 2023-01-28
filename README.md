@@ -1,4 +1,4 @@
-![alt text]<img src="images/codewars.png" alt="Codewars logo" width="200"/>
+<img src="images/codewars.png" alt="Codewars logo" width="600"/>
 
 # CODEWARS SOLUTIONS
 
