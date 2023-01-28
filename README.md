@@ -1,8 +1,8 @@
-![alt text](https://www.codewars.com/packs/assets/og-image.7f5134fb.png)
+![alt text](https://www.codewars.com/packs/assets/og-image.7f5134fb.png width="200")
 
-# Heading1 CODEWARS SOLUTIONS
+# CODEWARS SOLUTIONS
 
-## Heading2 General Info
+## General Info
 
-_This repository contains some of mine solutions for Codewars problems._<br>
-_For convenience, I've divided the solutions into folders by level (kuy)._
+- _This repository contains some of mine solutions for Codewars problems._<br>
+- _For convenience, I've divided the solutions into folders by level (kuy)._
