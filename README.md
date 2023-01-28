@@ -1,4 +1,4 @@
-![alt text](https://www.codewars.com/packs/assets/og-image.7f5134fb.png width="200")
+![alt text](https://www.codewars.com/packs/assets/og-image.7f5134fb.png =250x)
 
 # CODEWARS SOLUTIONS
 
