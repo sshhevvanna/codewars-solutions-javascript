@@ -1,0 +1,17 @@
+/*Very simple, given an integer or a floating-point number, find its opposite.
+
+Examples:
+
+1: -1
+14: -14
+-34: 34*/
+
+//Solution #1
+function opposite(number) {
+  return Math.abs(number) === number ? -number : Math.abs(number);
+}
+
+//Solution #2
+function opposite(number) {
+  return -number;
+}

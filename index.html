@@ -6,5 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Codewars Answers</title>
   </head>
-  <body></body>
+  <body>
+    <script>
+      function printerError(s) {
+        let errors = s.match(/[o-z]/g);
+        return errors.length + "/" + s.length;
+      }
+    </script>
+  </body>
 </html>
