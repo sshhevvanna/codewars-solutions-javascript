@@ -1,0 +1,41 @@
+/*Complete the solution so that it reverses the string passed into it.
+
+'world'  =>  'dlrow'
+'word'   =>  'drow'
+
+1. The split() method splits a String object into an array of string by separating the string into sub strings.
+2. The reverse() method reverses an array in place. The first array element becomes the last and the last becomes the first.
+3. The join() method joins all elements of an array into a string. */
+
+//Solution #1
+function solution(str) {
+  return str.split("").reverse().join("");
+}
+
+//Solution #2
+const solution = str => str.split('').reverse().join('');
+
+//Solution #3
+const solution = s => [...s].reverse().join('');
+
+//Solution #4
+let newString = "";
+function solution(str) {
+  for (let i = str.length - 1; i >= 0; i -= 1) {
+    newString += str[i];
+  }
+  return newString;
+}
+
+//Solution #5
+function sol(str) {
+  if (str === "") return "";
+  else return sol(str.substr(1)) + str.charAt(0);
+}
+
+//Solution #6
+function sol(str) {
+  return str === "" ? "" : sol(str.substr(1)) + str.charAt(0);
+}
+
+
