@@ -1,4 +1,4 @@
-<!-- *A square of squares
+/* A square of squares
 You like building blocks. You especially like building blocks that are squares.
 And what you even like more, is to arrange them into a square of square building blocks!
 However, sometimes, you can't arrange them into a square. Instead, you end up with an ordinary rectangle!
@@ -19,8 +19,8 @@ Examples
 3 => false
 4 => true
 25 => true
-26 => false -->
+26 => false */
 
-var isSquare = function(n){
-return Math.sqrt(n) % 1 === 0;
-}
+var isSquare = function (n) {
+  return Math.sqrt(n) % 1 === 0;
+};

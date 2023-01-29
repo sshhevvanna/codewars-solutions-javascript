@@ -1,4 +1,4 @@
-<!-- In a factory a printer prints labels for boxes.
+/*In a factory a printer prints labels for boxes.
 For one kind of boxes the printer has to use colors which, for the sake of simplicity, are named with letters from a to m.
 
 The colors used by the printer are recorded in a control string.
@@ -17,14 +17,14 @@ s="aaabbbbhaijjjm"
 printer_error(s) => "0/14"
 
 s="aaaxbbbbyyhwawiwjjjwwm"
-printer_error(s) => "8/22" -->
+printer_error(s) => "8/22" */
 
 function printerError(s) {
-let count = 0;
-for(let i = 0; i <= s.length; i += 1) {
-if (s[i] > "m") {
-count += 1;
-}
-}
-return count+"/"+s.length;
+  let count = 0;
+  for (let i = 0; i <= s.length; i += 1) {
+    if (s[i] > "m") {
+      count += 1;
+    }
+  }
+  return count + "/" + s.length;
 }
