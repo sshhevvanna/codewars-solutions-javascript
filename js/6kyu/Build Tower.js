@@ -24,7 +24,6 @@ function towerBuilder(nFloors) {
   let array = [];
   let newArr = [];
   let answer = [];
-  let numOfChar = 0;
   let symbol = "*";
 
   for (let i = 1; i <= nFloors * 2; i += 1) {
