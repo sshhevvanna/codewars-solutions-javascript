@@ -19,3 +19,13 @@ function fakeBin(x) {
     .map((n) => (n < 5 ? 0 : 1))
     .join("");
 }
+
+//Solution #3
+function fakeBin(x) {
+  let oldStr = x.toString();
+  let str = "";
+  for (let i = 0; i < x.length; i += 1) {
+    oldStr[i] < 5 ? (str += "0") : (str += "1");
+  }
+  return str;
+}

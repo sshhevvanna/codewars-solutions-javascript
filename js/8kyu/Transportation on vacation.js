@@ -7,10 +7,10 @@ Alternatively, if you rent the car for 3 or more days, you get $20 off your tota
 Write a code that gives out the total amount for different days(d).*/
 
 function rentalCarCost(d) {
-  if (d >= 3 && d < 7) {
-    return d * 40 - 20;
-  } else if (d >= 7) {
+  if (d > 6) {
     return d * 40 - 50;
+  } else if (d > 2) {
+    return d * 40 - 20;
   } else {
     return d * 40;
   }
