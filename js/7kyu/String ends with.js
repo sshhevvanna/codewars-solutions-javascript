@@ -17,3 +17,8 @@ function solution(str, ending) {
 function solution(str, ending) {
   return str.endsWith(ending);
 }
+
+//Solution #3
+function solution(str, ending) {
+  return ending < 1 ? true : str.slice(-ending.length) == ending;
+}

@@ -19,3 +19,13 @@ function repeatStr(n, s) {
 function repeatStr(n, s) {
   return s.repeat(n);
 }
+
+//Solution #3
+function repeatStr(n, s) {
+  let answer = "";
+  while (n > 0) {
+    answer += s;
+    n -= 1;
+  }
+  return answer;
+}

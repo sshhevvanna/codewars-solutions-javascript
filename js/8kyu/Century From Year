@@ -32,7 +32,7 @@ function century(year) {
   return year / 100;
 }
 
-//Solution #2
+//Solution #4
 function century(year) {
   const yearS = year.toString();
   const last2N = `${yearS[yearS.length - 2]}${yearS[yearS.length - 1]}`;
@@ -40,3 +40,13 @@ function century(year) {
   return last2N !== "00" ? century + 1 : century;
 }
 console.log(century(2001));
+
+//Solution #5
+function century(year) {
+  let yearStr = year.toString();
+  if (yearStr.endsWith("00")) {
+    return parseInt(year / 100);
+  } else {
+    return parseInt(year / 100 + 1);
+  }
+}

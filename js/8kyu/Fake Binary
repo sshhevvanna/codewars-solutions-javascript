@@ -22,10 +22,9 @@ function fakeBin(x) {
 
 //Solution #3
 function fakeBin(x) {
-  let oldStr = x.toString();
   let str = "";
   for (let i = 0; i < x.length; i += 1) {
-    oldStr[i] < 5 ? (str += "0") : (str += "1");
+    x[i] > 4 ? (str += 1) : (str += 0);
   }
   return str;
 }
