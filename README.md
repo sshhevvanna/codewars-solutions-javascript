@@ -43,9 +43,7 @@
 - Capitalization and Mutability.js
 - Cat years, Dog years.js
 - Century From Year
-
 * Contamination #1 -String
-
 - Convert a Boolean to a String
 - Convert a Number to a String.js
 - Convert a String to a Number.js
@@ -61,21 +59,15 @@
 - DNA to RNA Conversion.js
 - Do I get a bonus.js
 - Double Char.js
-
 * Drink about
-
 - Even or Odd
 - Exclamation marks series #1 Remove an exclamation mark from the end of string.js
 - Expressions Matter.js
 - Fake Binary
 - Find Maximum and Minimum Values of a List
-
 * Find Multiples of a Number
-
 - Find the first non-consecutive number.js
-
 * Find the position!
-
 - Find the smallest integer in the array.js
 - Function 2 - squaring an argument.js
 - Get Planet Name By ID.js
@@ -85,7 +77,6 @@
 - Grasshopper - Debug sayHello.js
 - Grasshopper - Grade book.js
 - Grasshopper - Messi Goals.js
-
 * Grasshopper - Messi goals function.js
 * Grasshopper - Personalized Message.js
 * Grasshopper - Summation
