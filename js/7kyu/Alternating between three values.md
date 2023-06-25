@@ -21,4 +21,27 @@ What is the most efficient way to cycle among three values? Write a function f s
 
 ```
 
-### Solution
+### Solution 1
+
+```
+      function f(x, cc) {
+        const arr = [];
+        arr.push(cc["a"], cc["b"], cc["c"]);
+        return arr.indexOf(x) === 2
+          ? arr[arr.indexOf(x) - 2]
+          : arr[arr.indexOf(x) + 1];
+      }
+
+```
+
+### Solution 2
+
+```
+function f(x, cc) {
+  switch (x) {
+    case cc.a: return cc.b;
+    case cc.b: return cc.c;
+    case cc.c: return cc.a;
+  }
+}
+```
