@@ -1,10 +1,18 @@
-/*Given a string, capitalize the letters that occupy even indexes and odd indexes separately, and return as shown below. 
+# Codewars JavaScript Solutions
+
+---
+
+## Alternate capitalization
+
+Given a string, capitalize the letters that occupy even indexes and odd indexes separately, and return as shown below.
 Index 0 will be considered even.
 For example, capitalize("abcdef") = ['AbCdEf', 'aBcDeF']. See test cases for more examples.
 The input will be a lowercase string with no spaces.
-Good luck!*/
+Good luck!
 
-//Solution #1
+### Solution 1
+
+```
 function capitalize(s) {
   s = s.split("");
   let evenStr = "";
@@ -22,8 +30,11 @@ function capitalize(s) {
   return [evenStr, oddStr];
 }
 console.log(capitalize("codewarriors"));
+```
 
-//Solution #2
+### Solution 2
+
+```
 function capitalize(s) {
   const odd = s
     .split("")
@@ -35,3 +46,4 @@ function capitalize(s) {
     .join("");
   return [even, odd];
 }
+```
