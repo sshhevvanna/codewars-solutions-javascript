@@ -7,43 +7,6 @@
     <title>Codewars Answers</title>
   </head>
   <body>
-    <script>
-      function sortByArea(array) {
-        let newArr = [];
-        let answer = [];
-
-        let rectangle = array[0][0] * array[0][1] * 0.5;
-        let circle = array[1] * 2 * 3.14;
-
-        for (let i = 0; i < array.length; i += 1) {
-          if (typeof array[i][1] === "number") {
-            newArr.push(array[i][0] * array[i][1] * 0.5);
-          } else {
-            newArr.push(array[i] * 2 * 3.14);
-          }
-        }
-
-        let minNum = Math.min(...newArr);
-        console.log(minNum);
-        let index = newArr.indexOf(minNum);
-        console.log(index);
-        let minNumInArray = array[index];
-        console.log(minNumInArray);
-
-        answer.push(minNumInArray);
-
-        array = array.sort();
-        console.log(array);
-
-        for (num of array) {
-          if (num != minNumInArray) {
-            answer.push(num);
-          }
-        }
-
-        return answer;
-      }
-      console.log(sortByArea([[4.23, 6.43], 1.23, 3.444, [1.342, 3.212]]));
-    </script>
+    <script></script>
   </body>
 </html>
