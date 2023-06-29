@@ -1,4 +1,10 @@
-/*In a factory a printer prints labels for boxes.
+# Codewars JavaScript Solutions
+
+---
+
+## Printer Errors
+
+In a factory a printer prints labels for boxes.
 For one kind of boxes the printer has to use colors which, for the sake of simplicity, are named with letters from a to m.
 
 The colors used by the printer are recorded in a control string.
@@ -12,13 +18,15 @@ Don't reduce this fraction to a simpler expression.
 
 The string has a length greater or equal to one and contains only letters from ato z.
 
-Examples:
+### Examples:
 s="aaabbbbhaijjjm"
 printer_error(s) => "0/14"
 
 s="aaaxbbbbyyhwawiwjjjwwm"
-printer_error(s) => "8/22" */
+printer_error(s) => "8/22" 
 
+### Solution
+```
 function printerError(s) {
   let count = 0;
   for (let i = 0; i <= s.length; i += 1) {
@@ -28,3 +36,4 @@ function printerError(s) {
   }
   return count + "/" + s.length;
 }
+```

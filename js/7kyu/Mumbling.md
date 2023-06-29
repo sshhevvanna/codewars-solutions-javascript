@@ -1,12 +1,20 @@
-/*This time no story, no theory. The examples below show you how to write function accum:
+# Codewars JavaScript Solutions
+
+---
+
+## Mumbling
+
+This time no story, no theory. The examples below show you how to write function accum:
 
 Examples:
 accum("abcd") -> "A-Bb-Ccc-Dddd"
 accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
 accum("cwAt") -> "C-Ww-Aaa-Tttt"
-The parameter of accum is a string which includes only letters from a..z and A..Z.*/
+The parameter of accum is a string which includes only letters from a..z and A..Z.
 
-//Solution #1
+### Solution 1
+
+```
 function accum(s) {
   let arr = [];
   let newArr = [];
@@ -59,8 +67,11 @@ function accum(s) {
   return newArray.join("");
 }
 console.log(accum("NyffsGeyylB"));
+```
 
-//Solution #2
+### Solution 2
+
+```
 function accum(s) {
   return s
     .split("")
@@ -80,3 +91,4 @@ function accum(str) {
   }
   return res.join("-");
 }
+```
