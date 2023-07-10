@@ -50,7 +50,6 @@ For `n = 6`, `a = 2` and `b = -5`, the output should be `3`: Ram will walk count
             stop = n + a + b;
           } else {
             b = b + Math.floor(-b / n) * n;
-            console.log(b);
             if (-b >= a) {
               stop = n + a + b;
             } else {
