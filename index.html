@@ -7,6 +7,20 @@
     <title>Codewars Answers</title>
   </head>
   <body>
-    <script></script>
+    <script>
+      const sortMyString = (s) => {
+        let even = s
+          .split("")
+          .filter((x, i) => i % 2 === 0)
+          .join("");
+        let odd = s
+          .split("")
+          .filter((i) => i % 2 !== 0)
+          .join("");
+        return even + " " + odd;
+      };
+
+      console.log(sortMyString("Yaoaua araea asaoa acalaeavaeara"));
+    </script>
   </body>
 </html>
