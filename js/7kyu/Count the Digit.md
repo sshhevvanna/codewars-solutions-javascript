@@ -27,24 +27,24 @@ Note that 121 has twice the digit 1.
 ### Solution
 
 ```
-function nbDig(n, d) {
-  let array = [];
-  let string = "";
-  let total = 0;
+      function nbDig(n, d) {
+        let i = 0;
+        let stringWithNumbers = "";
+        let sumOfDigitals = 0;
 
-  for (let i = 0; i <= n; i += 1) {
-    array.push(i);
-  }
+        while (n >= 0) {
+          stringWithNumbers += i * i;
+          n -= 1;
+          i += 1;
+        }
 
-  array = array.map((num) => num ** 2);
-  string = array.join("");
+        for (let i = 0; i < stringWithNumbers.length; i += 1) {
+          if (stringWithNumbers[i] == d) {
+            sumOfDigitals += 1;
+          }
+        }
 
-  for (let i = 0; i <= string.length - 1; i += 1) {
-    if (string[i] == d) {
-      total += 1;
-    }
-  }
-  return total;
-}
-console.log(nbDig(10, 1));
+        return sumOfDigitals;
+      }
+
 ```
