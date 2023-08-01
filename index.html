@@ -7,6 +7,23 @@
     <title>Codewars Answers</title>
   </head>
   <body>
-    <script></script>
+    <script>
+      function combine() {
+        const arg = [...arguments];
+        let accum = {};
+        arg.map((a) => {
+          for (let key in a) {
+            if (key in accum) {
+              accum[key] += a[key];
+            } else {
+              accum[key] = a[key];
+            }
+          }
+        });
+        return accum;
+      }
+
+      console.log(combine({ a: 10, b: 20, c: 30 }, { a: 3, c: 6, d: 3 }));
+    </script>
   </body>
 </html>
