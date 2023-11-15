@@ -24,7 +24,7 @@ Examples
 -->
 "####################################man!"
 
-### Solution
+### Solution 1
 
 ```
 function maskify(cc) {
@@ -37,4 +37,19 @@ return mask + cc.slice(cc.length - 4);
 }
 return cc;
 }
+```
+
+### Solution 2
+
+```
+     function maskify(cc) {
+        if (typeof cc !== "string") {
+          cc = cc.toString();
+        }
+        const str = cc.substring(cc.length, cc.length - 4);
+        const newStr = str.padStart(cc.length, "#");
+
+        return newStr;
+      }
+
 ```
