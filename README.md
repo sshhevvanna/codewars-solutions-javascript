@@ -1,5 +1,5 @@
 <img src="images/codewars.png" alt="Codewars logo" width="900" height="350"/>
-<img src = https://www.codewars.com/users/sh9vch9nk0/badges/large/>
+<img src = https://www.codewars.com/users/AnngryBunny/badges/large/>
 
 # CODEWARS SOLUTIONS
 
