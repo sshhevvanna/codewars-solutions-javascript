@@ -21,7 +21,7 @@ Example: (input --> output)
 "ATTGC" --> "TAACG"
 "GTAT" --> "CATA"
 
-### Solution
+### Solution 1
 
 ```
 
@@ -40,4 +40,26 @@ function DNAStrand(dna) {
   });
   return newDna.join("");
 }
+```
+
+### Solution 2
+
+```
+      function DNAStrand(dna) {
+        let newDna = "";
+
+        for (let i = 0; i <= dna.length - 1; i += 1) {
+          if (dna[i] === "A") {
+            newDna += "T";
+          } else if (dna[i] === "T") {
+            newDna += "A";
+          } else if (dna[i] === "C") {
+            newDna += "G";
+          } else {
+            newDna += "C";
+          }
+        }
+
+        return newDna;
+      }
 ```
