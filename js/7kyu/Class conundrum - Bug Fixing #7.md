@@ -10,8 +10,45 @@ Also it fails when Timmy tries to chain the adds e.g.
 
 `myList.add(0).add(1)`
 
-### Solution
+### Solution 1
 
 ```
+class List {
+  constructor(type) {
+    this.type = type;
+    this.items = [];
+    this.count = 0;
+  }
+  add(item) {
+    if ( typeof item != this.type )
+      return `This item is not of type: ${this.type}`;
 
+    this.items.push(item);
+    this.count += 1;
+    return this;
+  }
+}
+```
+
+### Solution 2
+
+```
+class List {
+  constructor(type) {
+    this.type = type;
+    this.items = [];
+  }
+
+  get count() {
+    return this.items.length;
+  }
+
+  add(item){
+    if(typeof item != this.type)
+      return `This item is not of type: ${this.type}`;
+
+    this.items.push(item);
+    return this;
+  }
+}
 ```
