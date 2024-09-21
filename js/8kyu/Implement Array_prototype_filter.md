@@ -1,0 +1,25 @@
+# Codewars JavaScript Solutions
+
+## Implement Array.prototype.filter()
+
+What we want to implement is `Array.prototype.filter()` function, just like the existing `Array.prototype.filter()`. Another similar function is `_.filter()` in underscore.js and lodash.js.
+
+The usage will be quite simple, like:
+
+`[1, 2, 3, 4, 5].filter(num => num > 3) == [4, 5]`
+
+Of course, the existing `Array.prototype.filter()` function has been undefined for the purposes of this Kata.
+
+### Solution
+
+```
+Array.prototype.filter = function (func) {
+  const result = [];
+  let i = 0;
+  while(i != this.length){
+    if(func(this[i])) result.push(this[i]);
+    i += 1;
+  }
+  return result;
+}
+```
