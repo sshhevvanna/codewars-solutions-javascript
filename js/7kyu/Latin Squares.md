@@ -23,5 +23,21 @@ Task: Write a function that returns a latin square for any positive integer n.
 ### Solution
 
 ```
+      function makeLatinSquare(n) {
+        const latinSquare = [];
+        let numbers = [];
 
+        for (let i = 1; i <= n; i += 1) {
+          numbers.push(i);
+        }
+
+        for (let i = 0; i < n; i += 1) {
+          latinSquare.push(numbers);
+          const number = numbers[0];
+          numbers = numbers.slice(1);
+          numbers.push(number);
+        }
+
+        return latinSquare;
+      }
 ```
