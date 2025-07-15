@@ -7,6 +7,37 @@
     <title>Codewars Answers</title>
   </head>
   <body>
-    <script></script>
+    <script>
+      function arrayInfo(arr) {
+        let integers = null;
+        let floatNum = null;
+        let stringChar = null;
+        let whitespaces = null;
+
+        if (arr == []) return "Nothing in the array!";
+
+        for (let i = 0; i <= arr.length - 1; i += 1) {
+          if (Number.isInteger(arr[i])) {
+            integers += 1;
+          } else if (typeof arr[i] === "number") {
+            floatNum += 1;
+          } else if (typeof arr[i] === "string") {
+            stringChar += 1;
+          } else if (arr[i] === " ") {
+            whitespaces += 1;
+          }
+        }
+
+        return [
+          [arr.length],
+          [integers],
+          [floatNum],
+          [stringChar],
+          [whitespaces],
+        ];
+      }
+
+      console.log(arrayInfo([1, 2, 3.33, 4, 5.01, "bass", "kick", " "]));
+    </script>
   </body>
 </html>
